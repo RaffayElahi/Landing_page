@@ -502,7 +502,9 @@ h2.margin.left_less{
     }
 }
 @media (max-width:603px){
-    body{
+    html, body {
+        margin: 0;
+        height: 100%;
         overflow-x: hidden;
     }
     header{
