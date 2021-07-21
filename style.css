@@ -502,11 +502,7 @@ h2.margin.left_less{
     }
 }
 @media (max-width:603px){
-    html, body {
-        margin: 0;
-        height: 100%;
-        overflow-x: hidden;
-    }
+
     header{
         background: url(images/mobile/image-header.jpg) no-repeat ;
     }
@@ -521,18 +517,17 @@ h2.margin.left_less{
         margin-right: 3vw;
     }
 
-    ul{
+    .ultra{
         height: 49%;
         width: 80%;
         display: flex;
         flex-direction: column;
         margin-top: 5vh;
         position: absolute;
+        opacity: 0;
         margin-left: 10%;
         background-color: white;
-        left: 100vw;
-        transition: left 1s;
-        
+        transition: opacity 1.2s cubic-bezier(.95,.05,.8,.04)
     }
     ul li{
         color: black;
@@ -641,5 +636,5 @@ h2.margin.left_less{
     }
 }
 .nav-active{
-    left: 0vw;
+    opacity: 1;
 }
