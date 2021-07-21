@@ -520,14 +520,14 @@ h2.margin.left_less{
     .ultra{
         height: 49%;
         width: 80%;
-        display: flex;
+        display: none;
         flex-direction: column;
         margin-top: 5vh;
         position: absolute;
         opacity: 0;
         margin-left: 10%;
         background-color: white;
-        transition: opacity 1.2s cubic-bezier(.95,.05,.8,.04)
+        transition: opacity 1s cubic-bezier(.95,.05,.8,.04)
     }
     ul li{
         color: black;
@@ -636,5 +636,6 @@ h2.margin.left_less{
     }
 }
 .nav-active{
+    display: flex;
     opacity: 1;
 }
